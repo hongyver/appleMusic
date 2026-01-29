@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make a playlist for Apple Music</title>
+    <!-- MusicKit JS CDN -->
+    <script src="https://js-cdn.music.apple.com/musickit/v1/musickit.js"></script>
+    <link rel="stylesheet" href="/static/css/index.css">
+</head>
+<body>
+    <script>
+        const DEV_TOKEN = "{{ dev_token }}";
+    </script>
+    <script defer src="/static/js/applemusic.js"></script>
+
+    <div class="container">
+        <img
+          src="static/images/apple-music-icon.png"
+          alt="Apple Music Icon"
+          class="apple-music-icon"
+        />
+    
+        <!-- Buttons and Prompt Input -->
+        <div class="controls">
+          <button id="authorize">Authorize</button>
+          <div class="prompt-area">
+            <label for="promptInput">만들고 싶은 플레이리스트 :</label>
+            <input type="text" id="promptInput" placeholder="예) 늦은 밤 퇴근할때 듣는 우울한 음악" />
+            <label for="count">곡수</label>
+            <input type="number" id="count" value="25" min="5" max="100"/>
+          </div>
+          <button id="makePlaylistButton">플레이스 리스트 만들기</button>
+          <pre id="log"></pre>
+          <div class="notice">
+            <div>플레이리스트를 만들기 위해 chatGPT 서비스 사용으로 과금(평균 1~2원)이 발생합니다.</div>
+            <div>따라서 과도한 사용은 서비스 중단을 유발할 수 있습니다.</div>
+            <div>개발자에게 도움을 주세요.</div>
+            <div>국민은행 09-21-0353-684 홍성제</div>
+            <!-- <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="hongyver" data-color="#ec3c56" data-emoji="😄"  data-font="Poppins" data-text="커피사주기!" data-outline-color="#ffffff" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script> -->
+          </div>
+        </div>
+    </div>    
+</body>
+</html>

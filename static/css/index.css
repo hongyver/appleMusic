@@ -1,0 +1,158 @@
+/* General Reset/Basic Style */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .notice {
+    font-size: 0.75rem;
+  }
+
+  /* 기본 커서 스타일 */
+  body.waiting, 
+  button.waiting {
+      cursor: wait; /* 대기 상태 (회전 아이콘) */
+  }
+
+  /* Container */
+  .container {
+    text-align: center;
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    border-radius: 8px;
+  }
+  
+  /* Apple Music Icon */
+  .apple-music-icon {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+  }
+  
+  /* Controls Section */
+  .controls {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #fa2a55; /* Typical Apple Music pinkish color */
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #cc2243;
+  }
+  
+  .prompt-area {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .prompt-area label {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .prompt-area input {
+    padding: 8px;
+    width: 250px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+/* General Reset/Basic Style */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container */
+.container {
+  text-align: center;
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  border-radius: 8px;
+}
+
+/* Apple Music Icon */
+.apple-music-icon {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+/* Controls Section */
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #fa2a55; /* Typical Apple Music pinkish color */
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #cc2243;
+}
+
+.prompt-area {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.prompt-area label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.prompt-area input {
+  padding: 8px;
+  width: 250px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+  
