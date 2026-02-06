@@ -101,7 +101,7 @@ def status():
         while True:
             if current_status != last_status:
                 last_status = current_status
-                yield f"data: {current_status}\n\n"
+                yield f"data: {current_status}"
             time.sleep(1)
     return Response(event_stream(), content_type="text/event-stream")
 
